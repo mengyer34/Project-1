@@ -7,6 +7,9 @@
     transition: 0.5s;
     letter-spacing: 1px;
 }
+a {
+    text-decoration: none;
+}
 h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -233,10 +236,10 @@ h1 {
     margin: 1rem 0;
 }
 .shopping .footer-shop{
-    display: flex;
     justify-content: right;
+    display: flex;
     padding: 0 0 1rem;
-    margin-right: 4rem;
+    margin-right: 7.5rem;
 }
 .shopping .heading-title {
     color: #fff;
@@ -260,7 +263,8 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     width: 80%;
-    margin: 1rem 0 1rem 4.5rem;
+    margin: 0 auto;
+    padding-top: 1rem;
 }
 .container .col-3 img{
     width: 200px;
@@ -274,7 +278,7 @@ h1 {
     box-shadow: 1px 1px 6px black;
 }
 .shopping .container .col-3 {
-    width: 300px;
+    width: 250px;
     background: rgba(128, 128, 128, 0.493);
     border: 1px solid grey;
     text-align: center;
@@ -295,19 +299,29 @@ h1 {
 /* Contact  */
 .form .container{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form .container form{
+    width: 40%;
+    margin: 5rem;
+    padding: 1.5rem 0; 
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.157); 
+}
+.form .container form:hover{
+    width: 40%;
+    margin: 5rem;
+    padding: 1.5rem 0;
+    box-shadow: 0 0 1rem 0 red; 
 }
 .form .container .form-group{
     width: 100%;
 }
-.form .container form{
-    width: 40%;
-    background: grey;
-    margin: 5rem;
-    padding: 1.5rem 0;
-    border-radius: 1rem;
-}
+
 .form .container .form-group{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 .form .container .form-group .form-item{
@@ -323,12 +337,17 @@ h1 {
     width: 100%;
     outline: none;
     padding: 1rem;
+    resize: none;
+    border: 1px solid red;
+    background: rgba(128, 128, 128, 0.157);
 }
 
 .form .container .form-group .form-item input {
     width: 100%;
     padding: 1rem;
     outline: none;
+    border: 1px solid red;
+    background: rgba(128, 128, 128, 0.157);
 }
 .two-col {
     display: flex;
@@ -339,13 +358,23 @@ h1 {
 .form .container .description{
     width: 50%;
 }
+.form .container .description img{
+    width: 80%;
+}
 .form .container .description h1{
     margin-top: 1rem;
 }
-.form .container .description img{
-    width: 60%;
-    margin-top: 1.5rem;
+.form .container button {
+    border-radius: 1px;
 }
+section {
+    width: 100%;
+}
+.col4 {
+    width: 30%;
+}
+
+
 /* Footer  */
 .footer {
     background: grey;
