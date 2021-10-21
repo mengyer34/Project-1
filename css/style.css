@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.5s;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.btn-read {
+    padding: 1rem;
+    color: #fff;
+    background: grey;
+    border: none;
+    border-radius: 9px;
+    margin: 1rem 1rem 0 0 ;
+    cursor: pointer;
+}
+.btn-buy {
+    padding: 1rem;
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 9px;
+    margin: 1rem 1rem 0 0 ;
+    cursor: pointer;
+}
+.btn-read-sm {
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background: grey;
+    border: none;
+    border-radius: 2px;
+    margin: 1rem 1rem 0 0 ;
+    cursor: pointer;
+}
+.btn-buy-sm {
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 2px;
+    margin: 1rem 1rem 0 0 ;
+    cursor: pointer;
+}
+.btn-read:hover {
+    background: red;
+    box-shadow: 2px 1px 3px gray;
+}
+.btn-buy:hover {
+    background: grey;
+    box-shadow: 2px 1px 3px rgb(223, 172, 172);
+}
+.btn-read-sm:hover {
+    background: red;
+    box-shadow: 2px 1px 3px gray;
+}
+.btn-buy-sm:hover {
+    background: grey;
+    box-shadow: 2px 1px 3px rgb(223, 172, 172);
+}
+/* Header  */
+.header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.header .logo .logo-pic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo .search-bar{
+    background: #ccc;
+    padding: 15px;
+    border-radius: 25px;
+    left: 15%;
+    position: relative;
+}
+.logo .search-bar:hover{
+    box-shadow: 1px 1px 3px red;
+}
+.logo .search-bar a {
+    color: #fff;
+    
+}
+.logo .search-bar a:hover {
+    color: red;
+}
+.logo .search-bar input{
+    width: 400px;
+    padding: 0.1rem;
+    background: #ccc;
+    outline: none;
+    border: none;
+}
+.header .logo .user div{
+    background: rgb(223, 213, 213);
+    width: 50px;
+    height: 50px;
+    padding: 1.5rem;
+    margin: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 3px grey;
+}
+.header .logo .user div:hover {
+    box-shadow: 2px 3px 3px rgb(151, 142, 142);
+    background: red;
+}
+.header .logo .user{
+    display: flex;
+}
+.header .logo .user a{
+    color: #fff;
+}
+
+
+/* Menu  */
+.header .nav-bar ul{
+    background: red;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; 
+    box-shadow: 2px 2px 5px gray;  
+}
+.header .nav-bar ul li {
+    padding: 1rem;
+}
+#active{
+    background: black;
+}
+
+
+.header .nav-bar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.header .nav-bar li:hover{
+    background: gray;
+}
+.banner .container {
+    display: flex;
+    line-height: 2rem;
+}
+.banner .container h2{
+    color: red;
+    font-size: 2rem;
+}
+.banner .container .description{
+    line-height: 2rem;
+    margin-top: 60px;
+    margin-left: 1rem;
+}
+.socail-link {
+    background: #ccc;
+    display: grid;
+    justify-content: baseline;
+    right: 0;
+    padding: 5px;
+    position: fixed;
+    border-radius: 1rem 0 0 1rem;
+}
+.socail-link img{
+    width: 40px;
+}
+
+.categories .heading-title {
+    background: grey;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.categories .container .item img{
+    width: 200px;
+    height: 200px;
+}
+.categories .container {
+    width: 70%;
+    margin: 0 auto;
+}
+.categories .container .item {
+    width: 200px;
+    background: rgba(104, 104, 104, 0.356);
+    margin-top: 2rem;
+    box-shadow: 1px 1px 3px grey;
+}
+.categories .container .item div{
+    background: rgba(255, 0, 0, 0.609);
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    margin-top: -19%;
+    cursor: pointer;
+}
+.categories .container .item div:hover {
+    background: red;
+    box-shadow: 2px 2px 5px red;
+}
+.categories .container .item div a {
+    text-decoration: none;
+    color: #fff;
+}
+.categories .container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+/* Laptop  */
+.shopping {
+    width: 100%;
+    border: 4px solid red;
+    margin: 1rem 0;
+}
+.shopping .footer-shop{
+    display: flex;
+    justify-content: right;
+    padding: 0 0 1rem;
+    margin-right: 4rem;
+}
+.shopping .heading-title {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    background: grey;
+}
+
+.shopping .heading-title div {
+    background: red;
+    padding: 1rem 3rem 1rem 2rem;
+    clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
+}
+.shopping .heading-title .al-center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.shopping .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 80%;
+    margin: 1rem 0 1rem 4.5rem;
+}
+.container .col-3 img{
+    width: 200px;
+}
+
+.container .col-3 i {
+    color: red;
+}
+.shopping .container .col-3:hover{
+    border: none;
+    box-shadow: 1px 1px 6px black;
+}
+.shopping .container .col-3 {
+    width: 300px;
+    background: rgba(128, 128, 128, 0.493);
+    border: 1px solid grey;
+    text-align: center;
+    padding-bottom: 0.6rem;
+}
+.shopping .container .col-3 .price {
+    font-size: 1.2rem;
+    color: red;
+    line-height: 2rem;
+}
+.shopping .container .col-3 .line {
+    width: 100%;
+    height: 1px;
+    background: grey;
+    margin-top: 10px;
+}
+
+/* Contact  */
+.form .container{
+    width: 100%;
+}
+.form .container .form-group{
+    width: 100%;
+}
+.form .container form{
+    width: 40%;
+    background: grey;
+    margin: 5rem;
+    padding: 1.5rem 0;
+    border-radius: 1rem;
+}
+.form .container .form-group{
+    width: 90%;
+    margin: 0 auto;
+}
+.form .container .form-group .form-item{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.form .container .form-group .form-item button{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.form .container .form-group .form-item textarea{
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+}
+
+.form .container .form-group .form-item input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+}
+.two-col {
+    display: flex;
+}
+.m-l {
+    margin-left: 8px;
+}
+.form .container .description{
+    width: 50%;
+}
+.form .container .description h1{
+    margin-top: 1rem;
+}
+.form .container .description img{
+    width: 60%;
+    margin-top: 1.5rem;
+}
+/* Footer  */
+.footer {
+    background: grey;
+    padding: 3rem;
+}
+.footer .container .logo {
+    margin-top: 2rem;
+}
+.footer .container h2 {
+    color: rgba(0, 0, 0, 0.863);
+}
+.footer .container{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2rem;
+}
+.footer .container .item ul {
+    list-style: none;
+}
+.footer .container .item input {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.footer .container .item a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.footer .container .item a:hover {
+    color: red;
+}
