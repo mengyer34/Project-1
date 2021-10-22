@@ -14,6 +14,9 @@ h1 {
     font-size: 3rem;
     line-height: 3rem;
 }
+h4 {
+    color: red;
+}
 
 .btn-read {
     padding: 1rem;
@@ -268,6 +271,8 @@ h1 {
 }
 .container .col-3 img{
     width: 200px;
+    height: 150px;
+
 }
 
 .container .col-3 i {
@@ -275,14 +280,13 @@ h1 {
 }
 .shopping .container .col-3:hover{
     border: none;
-    box-shadow: 1px 1px 6px black;
+    box-shadow: 2px 3px 20px rgb(56, 56, 56);
 }
 .shopping .container .col-3 {
-    width: 250px;
-    background: rgba(128, 128, 128, 0.493);
-    border: 1px solid grey;
+    width: 260px;
+    height: 300px;
+    background: #ccc;
     text-align: center;
-    padding-bottom: 0.6rem;
 }
 .shopping .container .col-3 .price {
     font-size: 1.2rem;
@@ -339,7 +343,7 @@ h1 {
     padding: 1rem;
     resize: none;
     border: 1px solid red;
-    background: rgba(128, 128, 128, 0.157);
+    background: none;
 }
 
 .form .container .form-group .form-item input {
@@ -347,7 +351,7 @@ h1 {
     padding: 1rem;
     outline: none;
     border: 1px solid red;
-    background: rgba(128, 128, 128, 0.157);
+    background: none;
 }
 .two-col {
     display: flex;
@@ -370,10 +374,112 @@ h1 {
 section {
     width: 100%;
 }
-.col4 {
-    width: 30%;
+.col6 {
+    width: 90%;
+    text-align: center;
+}
+.col6 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form img {
+    width: 50px;
+}
+.map {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    line-height: 2rem;
 }
 
+
+/* About us  */
+.about .container {
+    margin-top: 5rem;
+}
+.about .container img{
+    width: 50%;
+}
+.about .container .description{
+    position: relative;
+    margin-top: 2rem;
+}
+.about .title {
+    border: 4px solid red;
+}
+
+.about .title h2{
+    background: red;
+    width: 290px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
+}
+.about .title div{
+    width: 99%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+.about .title div .item{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .title img {
+    width: 200px;
+}
+
+.border {
+    width: 100%;
+    border: 4px solid red;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.border h2{
+    background: red;
+    width: 290px;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    clip-path: polygon(0 0, 100% 0%, 68% 100%, 0% 100%);
+}
+.group-2 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.group-2 .col-3 {
+    display: flex;
+    align-items: center;
+}
+.group-2 .col-3 .icon {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: grey;
+    margin-right: 1rem;
+    
+}
+.group-2 .col-3 h5 {
+    font-size: 1.2rem;
+    color: red;
+}
+.group-2 .col-3 p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
 
 /* Footer  */
 .footer {
