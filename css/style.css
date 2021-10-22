@@ -86,11 +86,14 @@ h4 {
     background: #ccc;
     padding: 15px;
     border-radius: 25px;
-    left: 15%;
+    margin-left: 40%;
     position: relative;
 }
 .logo .search-bar:hover{
-    box-shadow: 1px 1px 3px red;
+    border-radius: 7px;
+    background: #ccc;
+    box-shadow:  2px 5px 10px #bebebe,
+    -15px -15px 30px #ffffff;
 }
 .logo .search-bar a {
     color: #fff;
@@ -100,7 +103,7 @@ h4 {
     color: red;
 }
 .logo .search-bar input{
-    width: 400px;
+    width: 90%;
     padding: 0.1rem;
     background: #ccc;
     outline: none;
@@ -486,11 +489,12 @@ section {
     background: grey;
     padding: 3rem;
 }
+
 .footer .container .logo {
     margin-top: 2rem;
 }
 .footer .container h2 {
-    color: rgba(0, 0, 0, 0.863);
+    color: rgba(15, 15, 15, 0.993);
 }
 .footer .container{
     display: flex;
