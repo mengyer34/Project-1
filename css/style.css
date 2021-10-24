@@ -72,6 +72,10 @@ h4 {
     box-shadow: 2px 1px 3px rgb(223, 172, 172);
 }
 /* Header  */
+.header {
+    margin-bottom: 1rem;
+}
+
 .header .logo {
     display: flex;
     justify-content: space-between;
@@ -91,18 +95,14 @@ h4 {
     position: relative;
 }
 .logo .search-bar:hover{
-    border-radius: 7px;
     background: #ccc;
-    box-shadow:  2px 5px 10px #bebebe,
-    -15px -15px 30px #ffffff;
+    box-shadow:  2px 5px 10px #999999;
 }
 .logo .search-bar a {
     color: #fff;
     
 }
-.logo .search-bar a:hover {
-    color: red;
-}
+
 .logo .search-bar input{
     width: 90%;
     padding: 0.1rem;
@@ -141,25 +141,27 @@ h4 {
     background: red;
     list-style: none;
     display: flex;
-    justify-content: space-evenly; 
     box-shadow: 2px 2px 5px gray;  
 }
 .header .nav-bar ul li {
     padding: 1rem;
 }
+.header .nav-bar ul li:hover{
+    background: #ccc;
+    z-index: 1;
+}
+
+/* active  */
 #active{
     background: black;
 }
-
 
 .header .nav-bar a{
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
 }
-.header .nav-bar li:hover{
-    background: gray;
-}
+
 .banner .container {
     display: flex;
     line-height: 2rem;
@@ -182,14 +184,31 @@ h4 {
     position: fixed;
     border-radius: 1rem 0 0 1rem;
 }
-.list-menu {
-    display: none;
-}
-.list:hover #list-menu{
-    display: block;
-}
+
 .socail-link img{
     width: 40px;
+}
+
+/* Link  */
+li a{
+    display: flex;
+    align-items: inherit;
+}
+.nav-bar li .more-option {
+    display: none;
+    margin-top: 1rem;
+    
+}
+.nav-bar li:hover .more-option{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.781);
+}
+.nav-bar li a:hover {
+    color: red;
+    background: none;
 }
 
 .categories .heading-title {
@@ -242,18 +261,13 @@ h4 {
 
 
 
-/* Laptop  */
+/* shoping */
 .shopping {
     width: 100%;
-    border: 4px solid red;
+    border: 2px solid red;
     margin: 1rem 0;
 }
-.shopping .footer-shop{
-    justify-content: right;
-    display: flex;
-    padding: 0 0 1rem;
-    margin-right: 7.5rem;
-}
+
 .shopping .heading-title {
     color: #fff;
     width: 100%;
@@ -272,32 +286,27 @@ h4 {
     align-items: center;
 }
 .shopping .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 1rem;
-}
-.container .col-3 img{
-    width: 200px;
-    height: 150px;
-
-}
-
-.container .col-3 i {
-    color: red;
-}
-.shopping .container .col-3:hover{
-    border: none;
-    box-shadow: 2px 3px 20px rgb(56, 56, 56);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
 }
 .shopping .container .col-3 {
-    width: 260px;
-    height: 300px;
-    background: #ccc;
+    width: 24%;
     text-align: center;
+    margin: 5px;
+    padding: 1rem;
 }
+.container .col-3 img{
+    width: 100%;
+}
+
+.shopping .container .col-3:hover{
+    background: #e0e0e0;
+box-shadow:  10px 10px 20px #aaaaaa,
+             -10px -10px 20px #ffffff;
+}
+
 .shopping .container .col-3 .price {
     font-size: 1.2rem;
     color: red;
@@ -308,6 +317,11 @@ h4 {
     height: 1px;
     background: grey;
     margin-top: 10px;
+}
+.shopping .footer-shop{
+    justify-content: right;
+    display: flex;
+    margin: 1rem;
 }
 
 /* Reverse  */
@@ -330,7 +344,7 @@ h4 {
     padding: 1.5rem 0; 
     border-radius: 5px;
     border-radius: 15px;
-    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
     box-shadow:  5px 5px 31px #848484,
                  -5px -5px 31px #ffffff;
 }
@@ -358,7 +372,8 @@ h4 {
     outline: none;
     padding: 1rem;
     resize: none;
-    border: 1px solid red;
+    border: none;
+    border-bottom: 2px solid gray;
     background: none;
 }
 
@@ -366,8 +381,18 @@ h4 {
     width: 100%;
     padding: 1rem;
     outline: none;
-    border: 1px solid red;
+    border: none;
+    border-bottom: 1.5px solid gray;
     background: none;
+}
+::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form .container .form-group .form-item input:hover {
+    border-bottom: 2.1px solid red;
+}
+.form .container .form-group .form-item textarea:hover {
+    border-bottom: 2.1px solid red;
 }
 .two-col {
     display: flex;
