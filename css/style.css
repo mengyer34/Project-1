@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     transition: 0.5s;
     letter-spacing: 1px;
 }
@@ -82,35 +82,12 @@ h4 {
     align-items: center;
     margin: 1rem;
 }
-.header .logo .logo-pic{
+.header .logo-pic{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo .search-bar{
-    background: #ccc;
-    padding: 15px;
-    border-radius: 25px;
-    margin-left: 40%;
-    position: relative;
-}
-.logo .search-bar:hover{
-    background: #ccc;
-    box-shadow:  2px 5px 10px #999999;
-}
-.logo .search-bar a {
-    color: #fff;
-    
-}
-
-.logo .search-bar input{
-    width: 90%;
-    padding: 0.1rem;
-    background: #ccc;
-    outline: none;
-    border: none;
-}
-.header .logo .user div{
+.header .logo .user .icons{
     background: rgb(223, 213, 213);
     width: 50px;
     height: 50px;
@@ -124,13 +101,28 @@ h4 {
     align-items: center;
     box-shadow: 1px 1px 3px grey;
 }
-.header .logo .user div:hover {
+.header .logo .user .icons:hover {
     box-shadow: 2px 3px 3px rgb(151, 142, 142);
     background: red;
 }
 .header .logo .user{
     display: flex;
 }
+.header .logo .user .search-bar{
+    border: none;
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.header .logo .user .search-bar input{
+    background: #ccc;
+    border: none;
+    width: 98%;
+    padding: 1rem;
+    outline: none;
+    border-radius: 5px;
+}
+
 .header .logo .user a{
     color: #fff;
 }
@@ -164,7 +156,11 @@ h4 {
 
 .banner .container {
     display: flex;
-    line-height: 2rem;
+    line-height: 1rem;
+}
+.banner .container p{
+    margin-top: 1rem;
+    line-height: 1.5rem;
 }
 .banner .container h2{
     color: red;
@@ -184,7 +180,6 @@ h4 {
     position: fixed;
     border-radius: 1rem 0 0 1rem;
 }
-
 .socail-link img{
     width: 40px;
 }
@@ -223,18 +218,17 @@ li a{
     margin-top: 60px;
 }
 .categories .container .item img{
-    width: 200px;
+    width: 100%;
     height: 200px;
 }
-.categories .container {
-    width: 70%;
-    margin: 0 auto;
-}
 .categories .container .item {
-    width: 200px;
-    background: rgba(104, 104, 104, 0.356);
-    margin-top: 2rem;
+    width: 15%;
+    margin: 0.5rem;
     box-shadow: 1px 1px 3px grey;
+}
+.categories .container .item:hover{
+    background: #ccc;
+    box-shadow: 3px 5px 10px grey;
 }
 .categories .container .item div{
     background: rgba(255, 0, 0, 0.609);
@@ -253,13 +247,12 @@ li a{
     color: #fff;
 }
 .categories .container {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-
-
-
 
 /* shoping */
 .shopping {
@@ -267,14 +260,12 @@ li a{
     border: 2px solid red;
     margin: 1rem 0;
 }
-
 .shopping .heading-title {
     color: #fff;
     width: 100%;
     display: flex;
     background: grey;
 }
-
 .shopping .heading-title div {
     background: red;
     padding: 1rem 3rem 1rem 2rem;
@@ -291,11 +282,19 @@ li a{
     width: 100%;
     padding: 1rem;
 }
+.shopping .container i{
+    color: red;
+}
 .shopping .container .col-3 {
     width: 24%;
     text-align: center;
     margin: 5px;
     padding: 1rem;
+}
+.shopping .container .col-4 {
+    width: 32%;
+    margin: 0 5px;
+    margin: 0 auto;
 }
 .container .col-3 img{
     width: 100%;
@@ -424,6 +423,9 @@ section {
     align-items: center;
     justify-content: center;
 }
+.form .icon{
+    text-align: center; 
+}
 .form img {
     width: 50px;
 }
@@ -447,7 +449,7 @@ section {
     margin-top: 2rem;
 }
 .about .title {
-    border: 4px solid red;
+    border: 2px solid red;
 }
 
 .about .title h2{
@@ -477,7 +479,7 @@ section {
 
 .border {
     width: 100%;
-    border: 4px solid red;
+    border: 2px solid red;
     margin-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -527,12 +529,36 @@ section {
     background: grey;
     padding: 3rem;
 }
+.line {
+    background: rgb(255, 0, 0);
+    height: 2px;
+    width: 100%;
+}
+.line-50 {
+    background: rgb(255, 0, 0);
+    height: 2px;
+    width: 40%;
+    margin: 0 0 1rem;
+}
+.footer .container p{
+    font-weight: lighter;
+    color: #fff;
+}
 
 .footer .container .logo {
-    margin-top: 2rem;
+    line-height: 1rem;
+    margin-top: 1rem;
+}
+.footer .container .logo img{
+    width: 50%;
 }
 .footer .container h2 {
     color: rgba(15, 15, 15, 0.993);
+    font-size: 1.2rem;
+}
+.footer .container h1 {
+    color: rgba(15, 15, 15, 0.993);
+    font-size: 2rem;
 }
 .footer .container{
     display: flex;
