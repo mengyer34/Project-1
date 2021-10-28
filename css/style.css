@@ -529,17 +529,10 @@ section {
     background: grey;
     padding: 3rem;
 }
-.line {
-    background: rgb(255, 0, 0);
-    height: 2px;
-    width: 100%;
+.footer h2{
+    text-decoration: underline solid red;
 }
-.line-50 {
-    background: rgb(255, 0, 0);
-    height: 2px;
-    width: 40%;
-    margin: 0 0 1rem;
-}
+
 .footer .container p{
     font-weight: lighter;
     color: #fff;
@@ -583,4 +576,102 @@ section {
 }
 .footer .container .item a:hover {
     color: red;
+}
+.c-white {
+    color: #fff;
+}
+
+/* Add cart  */
+.card {
+    width: 50%;
+    background:#ccc;
+    padding: 1rem;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.card .header {
+    display: flex;
+    justify-content: space-between;
+}
+.card .body {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+}
+.item-center {
+    text-align: center;
+}
+.m-b {
+    margin-bottom: 1rem;
+}
+
+.card span {
+    color: red;
+}
+.line-1 {
+    width: 100%;
+    background: #000;
+    height: 1px;
+    margin: 0 auto;
+}
+
+/* Button  */
+.button-48 {
+  appearance: none;
+  background-color: gray;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  margin-top: 1rem;
+  opacity: 1;
+  outline: 0;
+  padding: 1.1em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: red;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
 }
