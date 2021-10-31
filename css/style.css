@@ -408,6 +408,7 @@ section {
 .about .container .description{
     position: relative;
     margin-top: 2rem;
+    line-height: 2rem;
 }
 .about .title {
     border: 2px solid red;
@@ -441,7 +442,7 @@ section {
     background: #ccc;
     width: 100%;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.9rem;
     padding: 2rem;
 }
 .creator .container {
